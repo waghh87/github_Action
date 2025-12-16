@@ -23,7 +23,7 @@ jobs:
         run: npm CI
       
       - name: Install Playwright Browsers
-        runs: npx playwright Install --with-deps
+        run: npx playwright Install --with-deps
     
       - name: run the playwright project
         run: npx playwright test --grep=@yee --project="chromium" --reporter=line,allure-playwright
