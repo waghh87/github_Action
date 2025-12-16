@@ -29,7 +29,7 @@ jobs:
         run: npx playwright test --grep=@yee --project="chromium" --reporter=line,allure-playwright
       
       - name: clear the old allure results
-        run: rmdir /s /q allure-results
+        run: rm -rf allure-results
 
       - name: generate and open the allure report
         run: |
